@@ -11,8 +11,7 @@ public class CarBuilder {
     private final List<String> chairs = new ArrayList<>();
     private String colour;
 
-    CarBuilder construct() {
-        return new CarBuilder();
+    public CarBuilder() {
     }
 
     CarBuilder addWheel(String wheel) {
