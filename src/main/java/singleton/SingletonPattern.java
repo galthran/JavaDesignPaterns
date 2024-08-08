@@ -8,6 +8,12 @@ public class SingletonPattern {
 
         SingletonServer singletonServer2 = SingletonServer.getInstance();
 
-        System.out.printf(String.valueOf(singletonServer == singletonServer2));
+        System.out.println(singletonServer == singletonServer2);
+
+        Logger logger1 = Logger.getInstance();
+        logger1.log("Logger1");
+
+        Logger logger2 = Logger.getInstance();
+        logger2.log("Logger2");
     }
 }
